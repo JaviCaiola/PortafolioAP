@@ -1,1 +1,37 @@
-<p>header works!</p>
+<header class="header">
+       <nav class="nav__padre">
+            <div class="nav__logo">
+                <a href="#main"><img src="./recursos/img/logo_portaf.png" alt="logo jav caiola" class="img-logo"></a>
+            </div>
+            <div class="lista__contacto parrafo">
+                <a href="./pages/formularioContacto.html" class="reset-link">Contactame</a>
+                <a href="https://github.com/JaviCaiola"><img src="./recursos/img/GitHub.png" alt="github" class="img-contacto"></a>
+                <a href="https://www.linkedin.com/in/javier-canchi-3aa612245"><img src="./recursos/img/linkedin.png" alt="linkedin" class="img-contacto"></a>
+            </div>
+       </nav>
+
+
+       <!--NAV MOBILE SOLO MENOR 400PX-->
+       <nav class="navbar navbar-expand-lg navbar-light nav2page">
+        
+        <div class="container-fluid justify-content-between">
+            <div class="nav__logo">
+                <a href="#main"><img src="./recursos/img/logo_portaf.png" alt="logo jav caiola" class="img-logo"></a>
+            </div>  
+          <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+            </svg>
+          </button>
+          <div class="collapse navbar-collapse nav2page" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 120vh;">
+                <li class="nav-item"><a class="nav-link" href="#sobremi">Sobre Mi</a></li>
+                <li class="nav-item"><a class="nav-link" href="#habilidades">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#educacion">Formacion</a></li>
+                <li class="nav-item"><a class="nav-link" href="#proyectosid">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./pages/formularioContacto.html">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
