@@ -1,0 +1,42 @@
+.sobre-mi{
+    display: flex;
+    background: var(--fondoOscuro);
+    color: var(--texto-claro);
+    align-items: center;
+    height: 100vh;
+}
+.articulo-sobremi{
+    text-align: center;
+    float: right;
+    margin: 0 10vh;
+    
+}
+.articulo-sobremi h1{
+    color: var(--fondoNaranja);
+}
+.img-jujuy{
+    float: left;
+    height: 35vh;
+    margin: 0 1rem;
+}
+
+@media screen and (max-width:400px) {
+    /*Seccion Sobre Mi*/
+    
+    .img-bola{
+        display: none;
+    }
+    .sobre-mi{
+        display: flex;
+        flex-direction: column;
+        height: 110vh;
+    }
+    .articulo-sobremi{
+        padding-top: 4rem;
+    }
+    .img-jujuy{
+        height: 20vh;
+        margin-top: 5vh;
+    }
+    
+}

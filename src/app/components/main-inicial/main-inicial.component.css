@@ -1,0 +1,121 @@
+.main {
+    width: 100%;
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.pagina__inicial {
+    color: #ffffff;
+    min-height: 90vh;
+    
+    position: relative;
+
+}
+.contenidomain{
+    position: relative;
+    z-index: 2;
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#0000002b , #1c1c1c);
+}
+
+.photo {
+    display: flex;
+    padding-top: 10px;
+}
+
+.foto__perfil {
+    margin: 0 auto;
+    background: no-repeat center;
+    background-size: 100% auto;
+    padding: 15vh;
+    border-radius: 50%;
+}
+#bash {
+    margin-top: 22vh;
+}
+
+.bash-col a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+@media screen and (min-width:400px) {
+
+    .bash-col {
+        text-align: center;
+        transition: ease-out .5s;
+        padding: .5rem;
+    }
+
+    .bash-col:hover {
+        background: rgba(0, 255, 251, 0.205);
+        color: var(--color-texto-claro);
+        border-radius: 6px;
+        cursor: pointer;
+        position: static;
+        transition: ease .5s;
+    }
+    .bash-col:active{
+        background: rgba(255, 124, 1, 0.207);
+        color: var(--color-texto-claro);
+    }
+    .bash-col a:visited{
+        color: var(--color-texto-claro);
+    }
+}
+
+@media screen and (max-width:400px) {
+    #bash{
+        margin-top: 3.2rem;
+    }
+    .photo{
+        padding-top: 2vh;
+    }
+    .foto__perfil{
+        padding: 10vh;
+    }
+    .titulo h1{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .bash-row{
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto;
+        padding: 5px 0 0 0;
+    }
+    .bash-col{
+        justify-content: center;
+        background:rgba(70, 70, 70, 0.366);
+        background-size: auto;
+        margin: 8px auto;
+        padding: 5px;
+        font-size: 3.5vh;
+        transition: 0.4s;
+        font-weight: 15px;
+        border-radius: 5px;
+    }
+    .bash-col:hover{
+        background:rgba(0, 255, 251, 0.197);
+        transform: translate(3px);
+        transition: none;
+    }
+
+    /*BARRA DE SELECCION MAIN*/
+
+    
+}

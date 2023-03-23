@@ -1,0 +1,27 @@
+.skills{
+    background: linear-gradient(#1c1c1c, #ff8400);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    color: var(--texto-claro);
+}
+.skill-row{
+    margin: 2rem 0;
+}
+ol, ul{
+    padding-left: 0;
+}
+.img-skil{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 2vh 4vh;
+}
+.img-bola{
+    float: right;
+    height: 35vh;
+    margin: 0 1rem;
+}
+@media screen and (max-width:400px){
+    
+}

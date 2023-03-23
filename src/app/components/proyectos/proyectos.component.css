@@ -1,0 +1,29 @@
+.proyectos{
+    height: 110vh;
+    background: var(--fondoOscuro);
+    
+}
+.t-project{
+    padding: 5vh 0;
+    color: var(--fondoNaranja);
+}
+.img-proyectos{
+    height: 70vh;
+    margin: 0 auto;
+}
+.c2{
+    background: linear-gradient(#11111100, #000000);
+    opacity: 2;
+    left: 12.5%;
+}
+@media screen and (max-width:400px){
+    .proyectos{
+        height: 60vh;   
+    }
+    .w-75{
+        height: 25vh;
+    }
+    .carousel-caption{
+        font-size: 5px;
+    }
+}

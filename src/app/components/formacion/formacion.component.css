@@ -1,0 +1,51 @@
+.formacion{
+    height: 100vh;
+    background: var(--fondoNaranja);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+.contenido-formacion{
+    text-align: center;
+    padding-top: 1vh;
+    color: #ffffff;
+}
+.contenido-formacion h1{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: bold;
+}
+#txt-formacion{
+    margin: 0 auto;
+    padding: 0 6vh;
+}
+.img-formacion{
+    max-height: 15vh;
+    border-radius: 6px;
+    margin: 3rem 1rem 0 1rem;
+    overflow: hidden;
+}
+.img-formacion:hover{
+    padding: .1rem;
+
+}
+/* DISEÑO DE LA BASE FORMACION DIAGONAL*/
+
+.base-formacion{
+    width: 100%;
+    height: 23vh;
+    background: var(--fondoOscuro);   
+    clip-path: polygon(100% 50%, 100% 100%, 0 100%, 0 50%, 50% 90%);
+    position: absolute;
+    bottom: 0.0;
+}
+@media screen and (max-width:400px){
+    .formacion{
+        height: 120vh;
+    }
+    .formacion-img{
+        display: flex;
+        flex-direction: column;
+    }
+}
