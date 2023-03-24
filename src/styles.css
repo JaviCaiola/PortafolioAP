@@ -25,6 +25,10 @@ html{
     overflow: hidden;
     margin: 0 auto;
 }
+.img-logo{
+    height: 9vh;
+    margin: 0 auto;
+}
 .img{
     object-fit: cover;
     width: 100%;
@@ -40,10 +44,18 @@ html{
 .titulo{
     font-family: var(--fuente-titulo);
     font-weight: bold;
+    text-align: center;
 }
 .parrafo{
     font-family: var(--fuente-parrafo);
 }
 section [id] {
     scroll-margin-top: 10px;
+}
+.reset-link{
+    text-decoration: none;
+    color: var(--texto-claro);
+}
+.reset-link:hover{
+    color: var(--cian);
 }

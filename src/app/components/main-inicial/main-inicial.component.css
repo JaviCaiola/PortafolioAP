@@ -40,6 +40,7 @@ video{
 .foto__perfil {
     margin: 0 auto;
     background: no-repeat center;
+    background-image: url("../../../assets/imagenes/fotoperfil.jpg");
     background-size: 100% auto;
     padding: 15vh;
     border-radius: 50%;
@@ -47,10 +48,12 @@ video{
 #bash {
     margin-top: 22vh;
 }
-
 .bash-col a {
     text-decoration: none;
     color: #ffffff;
+}
+.bash-row{
+    list-style: none;
 }
 
 @media screen and (min-width:400px) {
@@ -78,44 +81,3 @@ video{
     }
 }
 
-@media screen and (max-width:400px) {
-    #bash{
-        margin-top: 3.2rem;
-    }
-    .photo{
-        padding-top: 2vh;
-    }
-    .foto__perfil{
-        padding: 10vh;
-    }
-    .titulo h1{
-        font-size: 1rem;
-        font-weight: bold;
-    }
-    .bash-row{
-        flex-direction: column;
-        text-align: center;
-        margin: 0 auto;
-        padding: 5px 0 0 0;
-    }
-    .bash-col{
-        justify-content: center;
-        background:rgba(70, 70, 70, 0.366);
-        background-size: auto;
-        margin: 8px auto;
-        padding: 5px;
-        font-size: 3.5vh;
-        transition: 0.4s;
-        font-weight: 15px;
-        border-radius: 5px;
-    }
-    .bash-col:hover{
-        background:rgba(0, 255, 251, 0.197);
-        transform: translate(3px);
-        transition: none;
-    }
-
-    /*BARRA DE SELECCION MAIN*/
-
-    
-}

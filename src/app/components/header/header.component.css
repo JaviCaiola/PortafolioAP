@@ -13,10 +13,7 @@
     justify-content: space-between;
     align-items: center;
 }
-.img-logo{
-    height: 9vh;
-    margin: 0 auto;
-}
+
 .lista__contacto{
     display: flex;
     position: relative;
