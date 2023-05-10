@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,8 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  const iconofor = document.getElementById("icono-formulario");
-  const editlog = document.getElementById("editar_logo");
+  @ViewChild("mi_template") mi_template!: ElementRef;
 
-  
+  showTemplate: boolean = false;
+
+  toggleTemplate() {
+    this.showTemplate = !this.showTemplate;
+  }
+
 }
