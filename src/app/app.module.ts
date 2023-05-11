@@ -12,7 +12,10 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FormacionComponent } from './components/formacion/formacion.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { EditlogoComponent } from './components/editlogo/editlogo.component';
+import { FormeditComponent } from './components/formedit/formedit.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 @NgModule({
   declarations: [
@@ -26,11 +29,14 @@ import { EditlogoComponent } from './components/editlogo/editlogo.component';
     ContactoComponent,
     FormacionComponent,
     FooterComponent,
-    EditlogoComponent
+    FormeditComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
