@@ -16,6 +16,8 @@ import { FormeditComponent } from './components/formedit/formedit.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import { PortfolioRouteComponent } from './components/portfolio-route/portfolio-route.component';
+import { IniciosesionComponent } from './components/iniciosesion/iniciosesion.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import {MatInputModule} from '@angular/material/input';
     ContactoComponent,
     FormacionComponent,
     FooterComponent,
-    FormeditComponent
+    FormeditComponent,
+    PortfolioRouteComponent,
+    IniciosesionComponent
   ],
   imports: [
     BrowserModule,
