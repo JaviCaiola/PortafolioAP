@@ -3,7 +3,11 @@
     text-align: center;
     padding-top: 10vh;
 }
-
+.titulo{
+    font-family: var(--fuente-titulo);
+    font-weight: bold;
+    text-align: center;
+}
 .pagina__inicial {
     color: #ffffff;
     min-height: 90vh;
