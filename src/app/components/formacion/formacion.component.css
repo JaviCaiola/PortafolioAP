@@ -13,11 +13,10 @@
     color: #ffffff;
 }
 .contenido-formacion h1{
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: bold;
+    font-family: var(--fuente-titulo);
 }
 #txt-formacion{
-    margin: 0 auto;
+    margin: 0 20vh;
     padding: 0 6vh;
 }
 .img-formacion{

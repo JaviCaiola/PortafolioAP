@@ -1,0 +1,62 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    text-decoration: none;   
+}
+html{
+    scroll-margin-top: 11vh;
+}
+:root{
+    --fuente-titulo: 'Bai Jamjuree', sans-serif;
+    --fuente-parrafo: 'Abel', sans-serif;;
+    --fondoOscuro: #1C1C1C;
+    --texto-claro: rgb(255, 255, 255);
+    --fondoNaranja : rgb(255, 132, 0);
+    --cian: rgba(0, 255, 251);
+}
+
+.descripcion{
+    font-size: 1rem;
+    display: block;
+    font-family: var(--fuente-descripcion);
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 21ch;
+    
+    animation: typing 3s steps(18), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.img-logo{
+    height: 9vh;
+    margin: 0 auto;
+}
+.img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes typing{
+    from {width: 0;}
+}
+@keyframes blink{
+    50%{border-color: transparent;}
+}
+
+.parrafo{
+    font-size: 1.2rem;
+    font-family: var(--fuente-parrafo);
+}
+section [id] {
+    scroll-margin-top: 10px;
+}
+.reset-link{
+    text-decoration: none;
+    color: var(--texto-claro);
+}
+.reset-link:hover{
+    color: var(--cian);
+}
+
+html, body { height: 100%; }
+body { margin: 0; }
