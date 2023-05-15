@@ -18,6 +18,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { PortfolioRouteComponent } from './components/portfolio-route/portfolio-route.component';
 import { IniciosesionComponent } from './components/iniciosesion/iniciosesion.component';
+import { IndexcomponentComponent } from './components/indexcomponent/indexcomponent.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { IniciosesionComponent } from './components/iniciosesion/iniciosesion.co
     FooterComponent,
     FormeditComponent,
     PortfolioRouteComponent,
-    IniciosesionComponent
+    IniciosesionComponent,
+    IndexcomponentComponent
   ],
   imports: [
     BrowserModule,
