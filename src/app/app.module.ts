@@ -20,6 +20,7 @@ import { PortfolioRouteComponent } from './components/portfolio-route/portfolio-
 import { IniciosesionComponent } from './components/iniciosesion/iniciosesion.component';
 import { IndexcomponentComponent } from './components/indexcomponent/indexcomponent.component';
 import { EditskillComponent } from './components/editskill/editskill.component';
+import { FormSessionComponent } from './components/form-session/form-session.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { EditskillComponent } from './components/editskill/editskill.component';
     PortfolioRouteComponent,
     IniciosesionComponent,
     IndexcomponentComponent,
-    EditskillComponent
+    EditskillComponent,
+    FormSessionComponent
   ],
   imports: [
     BrowserModule,
