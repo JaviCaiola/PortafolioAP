@@ -4,24 +4,20 @@
     position: fixed;
     width: 100%;
     z-index: 3;
+    display: flex;
+    
 }
 .navbar{
     z-index: -1;
 }
 .nav__padre{
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
 }
-
-.lista__contacto{
-    display: flex;
-    position: relative;
-    align-items: center;
-}
-.lista__contacto a{
-    margin: 0 .2rem;
-    align-items: baseline;
+.rigth{
+    color: white;
+    cursor: pointer;
 }
 .reset-link{
     transition: .4s all;
@@ -32,7 +28,7 @@
 }
 
 .img-contacto{
-    height: 7vh;
+    height: 5.5vh;
 }
 @media screen and (min-width:400px) {
     .nav2page{
