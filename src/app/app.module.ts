@@ -19,6 +19,7 @@ import {MatInputModule} from '@angular/material/input';
 import { PortfolioRouteComponent } from './components/portfolio-route/portfolio-route.component';
 import { IniciosesionComponent } from './components/iniciosesion/iniciosesion.component';
 import { IndexcomponentComponent } from './components/indexcomponent/indexcomponent.component';
+import { EditskillComponent } from './components/editskill/editskill.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { IndexcomponentComponent } from './components/indexcomponent/indexcompon
     FormeditComponent,
     PortfolioRouteComponent,
     IniciosesionComponent,
-    IndexcomponentComponent
+    IndexcomponentComponent,
+    EditskillComponent
   ],
   imports: [
     BrowserModule,

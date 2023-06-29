@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog'
 import { FormeditComponent } from '../formedit/formedit.component';
+import { EditskillComponent } from '../editskill/editskill.component';
 
 
 @Component({
@@ -15,6 +16,10 @@ export class SkillsComponent {
 
   agregarskill() {
     console.log("machooo")
-    this._dialog.open(FormeditComponent)
+    this._dialog.open(FormeditComponent);
+  }
+
+  editarComponente( ){
+    this._dialog.open(EditskillComponent);
   }
 }
