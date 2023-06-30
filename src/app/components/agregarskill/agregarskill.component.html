@@ -1,13 +1,20 @@
-<form action="" [f]">
-    <H1>Agregar Skill</H1>
-    <div>
-        <label for="">Nombre</label>
-        <input type="text" placeholder="Nombre de skill" formCon>
-        <label for="">Url</label>
-        <input type="text" placeholder="Url Skill">
+<form action="" []>
+    <div mat-dialog-title>
+        <h1>Agregar Skill</h1>
     </div>
-    <div>
-        <button>Añadir</button>
-        <button>Cancelar</button>
+    <div mat-dialog-content>
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre de Skill</mat-label>
+            <input matInput type="text" placeholder="Nombre Skill" formControlName="nombre">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Url de img</mat-label>
+            <input matInput type="text" placeholder="Url img" formControlName="url">
+        </mat-form-field>
     </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button>Añadir</button>
+        <button mat-raised-button (click)="close()">Cancelar</button>
+    </div>
+    
 </form>

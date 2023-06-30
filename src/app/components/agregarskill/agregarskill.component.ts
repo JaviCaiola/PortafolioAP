@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Skill } from 'src/app/model/ObjSkill';
 import { AuthtenticationService } from 'src/app/service/authtentication.service';
@@ -13,7 +14,7 @@ export class AgregarskillComponent {
   skill : Array<Skill>;
   form : FormGroup;
 
-  constructor(fb : FormBuilder, private skService:AuthtenticationService){
+  constructor(public dialogref : MatDialogRef<AgregarskillComponent>,fb : FormBuilder, private skService:AuthtenticationService){
     this.skill = new Array<Skill>();
     this.form =  fb.group({
       nombre : new FormControl('',[Validators.required]),
@@ -32,10 +33,10 @@ export class AgregarskillComponent {
     }
   }
 
-  
-  /*
+
+
   close(){
     this.dialogref.close();
   }
-  */ 
+ 
 }

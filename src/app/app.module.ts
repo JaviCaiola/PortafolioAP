@@ -14,7 +14,6 @@ import { ProyectosComponent } from './components/proyectos/proyectos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { FormacionComponent } from './components/formacion/formacion.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { FormeditComponent } from './components/formedit/formedit.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
@@ -35,7 +34,6 @@ import { AgregarskillComponent } from './components/agregarskill/agregarskill.co
     ContactoComponent,
     FormacionComponent,
     FooterComponent,
-    FormeditComponent,
     PortfolioRouteComponent,
     EditskillComponent,
     FormSessionComponent,
