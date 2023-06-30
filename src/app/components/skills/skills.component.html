@@ -8,13 +8,13 @@
     </div>-->
     <div class="container">
         <section class="skill__container">
-            <ng-template class="objeto" let-skillo>
+            <ng-template class="objeto" let-skill>
                 <div class="iconoscrud">
                     <i class="bi bi-tools" (click)="editarComponente()"></i>
-                    <i class="bi bi-trash3" (click)="deleteSkill(skillo.id)"></i>
+                    <i class="bi bi-trash3" (click)="deleteSkill(skill.id)"></i>
                 </div>
-                <img [src]="skillo.url" alt="html by riajulislam" class="col img-skil" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
-                <label for="">{{skillo.nombre}}</label>
+                <img [src]="skill.url" alt="html by riajulislam" class="col img-skil" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+                <label for="">{{skill.nombre}}</label>
             </ng-template>
             <i class="bi bi-plus-square" (click)="ventanaadd()"></i>
         </section>
