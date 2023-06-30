@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Skill } from '../model/ObjSkill';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthtenticationService {
   private apiurl = "https://apiback-4evp.onrender.com/api"
+
+  skill: Skill;
 
   constructor(private http:HttpClient) { }
 

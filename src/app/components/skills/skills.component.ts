@@ -15,7 +15,6 @@ export class SkillsComponent {
   }
 
   agregarskill() {
-    console.log("machooo")
     this._dialog.open(FormeditComponent);
   }
 
