@@ -17,8 +17,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { PortfolioRouteComponent } from './components/portfolio-route/portfolio-route.component';
-import { IniciosesionComponent } from './components/iniciosesion/iniciosesion.component';
-import { IndexcomponentComponent } from './components/indexcomponent/indexcomponent.component';
 import { EditskillComponent } from './components/editskill/editskill.component';
 import { FormSessionComponent } from './components/form-session/form-session.component';
 
@@ -36,8 +34,6 @@ import { FormSessionComponent } from './components/form-session/form-session.com
     FooterComponent,
     FormeditComponent,
     PortfolioRouteComponent,
-    IniciosesionComponent,
-    IndexcomponentComponent,
     EditskillComponent,
     FormSessionComponent
   ],

@@ -7,6 +7,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./form-session.component.css']
 })
 export class FormSessionComponent{
+  /*
   form:FormGroup;
   constructor(private formBuilder:FormBuilder){
     this.form = this.formBuilder.group(
@@ -21,5 +22,5 @@ export class FormSessionComponent{
 
   }
 
-
+  */
 }

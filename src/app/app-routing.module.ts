@@ -6,7 +6,7 @@ import { FormSessionComponent } from './components/form-session/form-session.com
 const routes: Routes = [
   {path:'portfolio',component:PortfolioRouteComponent},
   {path:'iniciarsesion',component:FormSessionComponent},
-  {path:'',redirectTo:'iniciarsesion',pathMatch:'full'}
+  {path:'',redirectTo:'portfolio',pathMatch:'full'}
 ];
 
 @NgModule({
