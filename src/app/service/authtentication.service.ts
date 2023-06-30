@@ -12,18 +12,18 @@ export class AuthtenticationService {
   constructor(private http:HttpClient) { }
 
   getAll(){
-    return this.http.get(`${this.apiurl}/all`);
+    return this.http.get<Skill[]>(`${this.apiurl}/all`);
   }
   getById(id : number){
     return this.http.get(`${this.apiurl}/buscar/${id}`);
   }
 
   create (data:Skill){
-    return this.http.post(`${this.apiurl}/create`, data);
+    return this.http.post(`${this.apiurl}/create`, data, {observe:'response'});
   }
 
   update (id:number, data :Skill){
-    return this.http.put(`${this.apiurl}/update/${id}`, data);
+    return this.http.put<Skill>(`${this.apiurl}/update/${id}`, data, {observe:'response'});
   }
 
   delete (id : number){
