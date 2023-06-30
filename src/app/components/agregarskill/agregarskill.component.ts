@@ -32,9 +32,6 @@ export class AgregarskillComponent {
       })
     }
   }
-
-
-
   close(){
     this.dialogref.close();
   }
