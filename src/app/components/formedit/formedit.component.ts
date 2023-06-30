@@ -15,8 +15,7 @@ export class FormeditComponent {
   skillo :Array<Skill>;
   form : FormGroup;
 
-  constructor (
-    public dialogref : MatDialogRef<FormeditComponent>, fb : FormBuilder, private skService : AuthtenticationService){
+  constructor (public dialogref : MatDialogRef<FormeditComponent>, fb : FormBuilder, private skService : AuthtenticationService){
     this.skillo = new Array<Skill>();
     this.form = fb.group({
       nombre : new FormControl('',[Validators.required]),

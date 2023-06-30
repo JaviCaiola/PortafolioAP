@@ -1,16 +1,12 @@
-<form action="">
-    <div mat-dialog-title>
+<form action="" []>
+    <div>
         <h1>Agregar Skill</h1>
     </div>
-    <div mat-dialog-content>
-        <mat-form-field appearance="fill">
+    <div>
             <mat-label>Nombre de Skill</mat-label>
-            <input matInput type="text" placeholder="Nombre Skill" formC>
-        </mat-form-field>
-        <mat-form-field appearance="fill">
+            <input type="text" placeholder="Nombre Skill" formControlName="nombre">
             <mat-label>Url de img</mat-label>
-            <input matInput type="text" placeholder="Url img">
-        </mat-form-field>
+            <input type="text" placeholder="Url img" formControlName="url">
     </div>
     <div mat-dialog-actions>
         <button mat-raised-button>Añadir</button>

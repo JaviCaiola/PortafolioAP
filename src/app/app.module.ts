@@ -20,6 +20,7 @@ import {MatInputModule} from '@angular/material/input';
 import { PortfolioRouteComponent } from './components/portfolio-route/portfolio-route.component';
 import { EditskillComponent } from './components/editskill/editskill.component';
 import { FormSessionComponent } from './components/form-session/form-session.component';
+import { AgregarskillComponent } from './components/agregarskill/agregarskill.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { FormSessionComponent } from './components/form-session/form-session.com
     FormeditComponent,
     PortfolioRouteComponent,
     EditskillComponent,
-    FormSessionComponent
+    FormSessionComponent,
+    AgregarskillComponent
   ],
   imports: [
     BrowserModule,
