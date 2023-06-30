@@ -7,9 +7,7 @@ import { Skill } from '../model/ObjSkill';
   providedIn: 'root'
 })
 export class AuthtenticationService {
-  private apiurl = "https://apiback-4evp.onrender.com/api"
-
-  skill: Skill;
+  private apiurl = "https://apiback-4evp.onrender.com/api";
 
   constructor(private http:HttpClient) { }
 
@@ -20,11 +18,11 @@ export class AuthtenticationService {
     return this.http.get(`${this.apiurl}/buscar/${id}`);
   }
 
-  create (data:any){
+  create (data:Skill){
     return this.http.post(`${this.apiurl}/create`, data);
   }
 
-  update (id:number, data :any){
+  update (id:number, data :Skill){
     return this.http.put(`${this.apiurl}/update/${id}`, data);
   }
 

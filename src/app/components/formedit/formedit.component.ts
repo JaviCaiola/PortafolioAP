@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
+import { Skill } from 'src/app/model/ObjSkill';
 import { AuthtenticationService } from 'src/app/service/authtentication.service';
 
 @Component({
@@ -9,7 +10,6 @@ import { AuthtenticationService } from 'src/app/service/authtentication.service'
 })
 export class FormeditComponent {
 
-  
   constructor (
     private apiservice: AuthtenticationService,
     public dialogref : MatDialogRef<FormeditComponent>
@@ -17,12 +17,8 @@ export class FormeditComponent {
   }
 
   agregarSkill(){
-    const nuevaSkill = {
-      nombre : this.nombre,
-      url : this.url
-    }
-
-    this.apiservice.create(nuevaSkill).subscribe((data:any)=>{
+    skill = Skill;
+    this.apiservice.create(skill).subscribe((data:any)=>{
       this.dialogref.close();
     })
   }
