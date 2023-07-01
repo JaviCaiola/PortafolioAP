@@ -1,32 +1,32 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Skill } from '../model/ObjSkill';
-
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthtenticationService {
-  private apiurl = "https://apiback-4evp.onrender.com/api";
+  private apiurl = 'https://apiback-4evp.onrender.com/api/';
 
   constructor(private http:HttpClient) { }
 
-  getAll(){
-    return this.http.get<Skill[]>(`${this.apiurl}/all`);
+  getAll():Observable<any>{
+    return this.http.get<any>(this.apiurl+`all`);
   }
-  getById(id : number){
-    return this.http.get(`${this.apiurl}/buscar/${id}`);
-  }
-
-  create (data:Skill){
-    return this.http.post(`${this.apiurl}/create`, data, {observe:'response'});
+  getById(id : number):Observable<any>{
+    return this.http.get<any>(this.apiurl+`buscar/${id}`);
   }
 
-  update (id:number, data :Skill){
-    return this.http.put<Skill>(`${this.apiurl}/update/${id}`, data, {observe:'response'});
+  create (data:Skill):Observable<any>{
+    return this.http.post<any>(this.apiurl+`crear`,data);
   }
 
-  delete (id : number){
-    return this.http.delete(`${this.apiurl}/delete/${id}`)
+  update (id:number, data :Skill):Observable<any>{
+    return this.http.put<any>(this.apiurl+`update/${id}`, data);
+  }
+
+  delete (id : number):Observable<any>{
+    return this.http.delete<any>(this.apiurl+`borrar/${id}`)
   }
 }

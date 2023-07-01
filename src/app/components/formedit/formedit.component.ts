@@ -1,30 +1,25 @@
 import { Component } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
-import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Skill } from 'src/app/model/ObjSkill';
 import { AuthtenticationService } from 'src/app/service/authtentication.service';
+import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
+
 
 @Component({
-  selector: 'app-agregarskill',
-  templateUrl: './agregarskill.component.html',
-  styleUrls: ['./agregarskill.component.css']
+  selector: 'app-formedit',
+  templateUrl: './formedit.component.html',
+  styleUrls: ['./formedit.component.css']
 })
-export class AgregarskillComponent {
+export class FormeditComponent {
 
-  skill : Array<Skill>;
+  skillo :Array<Skill>;
   form : FormGroup;
 
-  constructor(public dialogref : MatDialogRef<AgregarskillComponent>,fb : FormBuilder, private skService:AuthtenticationService){
-    this.skill = new Array<Skill>();
-    this.form =  fb.group({
+  constructor (public dialogref : MatDialogRef<FormeditComponent>, fb : FormBuilder, private skService : AuthtenticationService){
+    this.skillo = new Array<Skill>();
+    this.form = fb.group({
       nombre : new FormControl('',[Validators.required]),
       url : new FormControl('', [Validators.required])
-    })
-  }
-
-  getSkill(){
-    this.skService.getAll().subscribe(res =>{
-      this.skill = res;
     })
   }
 
@@ -34,15 +29,15 @@ export class AgregarskillComponent {
       skill.nombre = this.form.get('nombre')?.value;
       skill.url = this.form.get('url')?.value;
       this.skService.create(skill).subscribe(res => {
-        this.getSkill()
         this.form.reset()
       })
-      console.log("creado")
-      console.log(skill)
     }
   }
+
   close(){
     this.dialogref.close();
   }
- 
+
+
+
 }

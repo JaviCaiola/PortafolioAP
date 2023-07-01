@@ -6,17 +6,37 @@
             <img src="../../../assets/imagenes/html-5.png" alt="html by riajulislam" class="col img-skil" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
         </ul>
     </div>-->
+    
+    <form action="" [formGroup]="form">
+        <div mat-dialog-title>
+            <h1>Agregar Skill</h1>
+        </div>
+        <div mat-dialog-content>
+            <mat-form-field appearance="fill">
+                <mat-label>Nombre de Skill</mat-label>
+                <input matInput type="text" placeholder="Nombre Skill" formControlName="nombre">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Url de img</mat-label>
+                <input matInput type="text" placeholder="Url img" formControlName="url">
+            </mat-form-field>
+        </div>
+        <div mat-dialog-actions>
+            <button mat-raised-button (click)="crearSkill()">Añadir</button>
+        </div>
+        
+    </form>
     <div class="container">
         <section class="skill__container">
             <ng-template class="objeto" let-skill>
                 <div class="iconoscrud">
-                    <i class="bi bi-tools" (click)="editarComponente()"></i>
+                    <i class="bi bi-tools"></i>
                     <i class="bi bi-trash3" (click)="deleteSkill(skill.id)"></i>
                 </div>
-                <img [src]="skill.url" alt="html by riajulislam" class="col img-skil" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="500">
+                <img [src]="skill.url" class="col img-skil" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="300">
                 <label for="">{{skill.nombre}}</label>
             </ng-template>
-            <i class="bi bi-plus-square" (click)="ventanaadd()"></i>
+            <i class="bi bi-plus-square"></i>
         </section>
     </div>
 </section>
