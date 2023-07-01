@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatDialog } from '@angular/material/dialog'
 import { EditskillComponent } from '../editskill/editskill.component';
 import { AgregarskillComponent } from '../agregarskill/agregarskill.component';
@@ -12,8 +12,8 @@ import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms'
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
 })
-export class SkillsComponent {
-  skill : Array<Skill>;
+export class SkillsComponent implements OnInit{
+  skill : any[]=[];
   form : FormGroup;
 
   constructor(private _dialog: MatDialog, fb : FormBuilder, private skService:AuthtenticationService){
@@ -22,6 +22,10 @@ export class SkillsComponent {
       nombre : new FormControl('',[Validators.required]),
       url : new FormControl('', [Validators.required])
     })
+  }
+
+  ngOnInit():void{
+    this.getSkill();
   }
 
   //INTERFACES QUE SE DESPLIEGAN
@@ -35,7 +39,7 @@ export class SkillsComponent {
   }
 */
   //FUNCIONES DE LOS BOTONES Y OBTENCION DE DATOS
-  getSkill(){
+  getSkill():void{
     this.skService.getAll().subscribe(res =>{
       this.skill = res;
     })
@@ -47,7 +51,8 @@ export class SkillsComponent {
       skill.url = this.form.get('url')?.value;
       this.skService.create(skill).subscribe(res => {
         this.getSkill()
-        this.form.reset()
+        window.location.reload();
+        this.form.reset();
       })
       console.log("creado")
       console.log(skill)

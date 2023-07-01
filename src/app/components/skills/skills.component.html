@@ -28,7 +28,7 @@
     </form>
     <div class="container">
         <section class="skill__container">
-            <ng-template class="objeto" let-skill>
+            <ng-template class="objeto" let-skill *ngFor="let obj of skill">
                 <div class="iconoscrud">
                     <i class="bi bi-tools"></i>
                     <i class="bi bi-trash3" (click)="deleteSkill(skill.id)"></i>
